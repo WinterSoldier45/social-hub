@@ -7,4 +7,13 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   base: '/social-hub/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
+  }
 });
